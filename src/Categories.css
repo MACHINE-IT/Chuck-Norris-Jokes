@@ -1,0 +1,32 @@
+.categories {
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 40px 40px 40px 40px; 
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-content: center;   
+    grid-template-columns: repeat(4, 100px); 
+}
+.JokeButton {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+}
+
+.jokeCard {
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    max-width: 250px;
+    background-color:rgb(49, 135, 206) !important;
+    color: white !important;
+    
+}
+
+
+
+@media (max-width: 450px) {
+    .categories{
+        grid-template-columns: repeat(auto-fill, 100px); 
+    }
+}
